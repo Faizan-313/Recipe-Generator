@@ -4,9 +4,11 @@ export default function IngredientsList(props){
     });
     return (
         <section>
-            <h2>Ingredients on hand:</h2>
-            <p style={{fontSize: '10px', marginTop: '2px',color: 'darkgrey'}}>At least add four ingredients</p>
-            <ul className="ingredients-list" aria-live="polite">{item}</ul>
+            <div className="ingredients-list-section">
+                <h2>Ingredients on hand:</h2>
+                <p style={{fontSize: '10px', marginTop: '2px',color: 'darkgrey'}}>At least add four ingredients</p>
+                <ul className="ingredients-list" aria-live="polite">{item}</ul>
+            </div>
             {props.ingredients.length > 3 && <div className="get-recipe-container">
                 <div>
                     <h3>Ready for a recipe?</h3>
