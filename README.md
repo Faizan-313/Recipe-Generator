@@ -23,7 +23,7 @@ cd chef-claude
 
 npm install
 
-Create a .env file in the backend directory and add your Hugging Face API key:
+Create a .env file add your Hugging Face API key:
 HF_ACCESS_TOKEN=your_huggingface_access_token
 ```
 ### for frontend
