@@ -7,6 +7,10 @@ WORKDIR /app
 # Copy package.json and package-lock.json first (this helps leverage Docker cache)
 COPY package*.json ./
 
+# Debugging step to check versions
+RUN node -v && npm -v
+
+
 # Install dependencies
 RUN npm install
 
@@ -21,13 +25,3 @@ EXPOSE 3000
 
 # Command to run your app using Vite's preview mode
 CMD ["npm", "run", "start"]
-
-# Debugging step to check versions
-RUN node -v && npm -v
-
-# Install dependencies
-RUN npm install
-
-# Build the React project
-RUN npm run build
-
