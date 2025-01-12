@@ -4,8 +4,9 @@ import env from "dotenv";
 import cors from "cors";
 
 const app = express();
+const frontendPort = parseInt(process.env.PORT)
 app.use(cors({
-    origin: "http://localhost:5173" 
+    origin: `http://localhost:${frontendPort}`
 }));
 
 const port = 3000
