@@ -8,11 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy all files into the container
-COPY . /app/.
-
-# Debug: Check if the files are copied correctly
-RUN ls -al /app/src
+# Copy the rest of the application
+COPY . .
 
 # Build the application
 RUN npm run build
