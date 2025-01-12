@@ -11,6 +11,10 @@ RUN npm install
 # Copy the rest of the application
 COPY . .
 
+# Debug step: List the files in /app to ensure everything is copied
+RUN ls -al /app
+RUN ls -al /app/src
+
 # Build the application
 RUN npm run build
 
