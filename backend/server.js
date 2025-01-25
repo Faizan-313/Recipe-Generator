@@ -7,7 +7,7 @@ env.config();
 
 const app = express();
 app.use(cors({
-    origin: `http://localhost:${process.env.PORT}`,
+    origin: "https://Recipe-Generator-green.vercel.app/",
     methods: ["GET", "POST"], 
     allowedHeaders: ["Content-Type"],
 }));
