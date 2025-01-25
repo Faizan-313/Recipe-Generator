@@ -23,19 +23,15 @@ cd chef-claude
 
 cd frontend
 npm install
+npm run dev
 
 cd ../backend
 npm install
+node server.js
 
 Create a .env file add your Hugging Face API key:
 HF_ACCESS_TOKEN=your_huggingface_access_token
 ```
-### for frontend
-npm run dev
-
-### for backend
-node server.js
-
 
 # Contributing:
 Feel free to submit issues and pull requests. Contributions to improve the functionality or suggest features are welcome!
