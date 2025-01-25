@@ -21,17 +21,18 @@ Chef Claude is a recipe suggestion app that helps users find new recipe ideas ba
 git clone "link"
 cd chef-claude
 
+cd frontend
 npm install
-
-Create a .env file add your Hugging Face API key:
-HF_ACCESS_TOKEN=your_huggingface_access_token
-```
-### for frontend
 npm run dev
 
-### for backend
+cd ../backend
+npm install
 node server.js
 
+Create a .env file in the backend add your Hugging Face API key and port:
+HF_ACCESS_TOKEN=your_huggingface_access_token
+PORT=0000
+```
 
 # Contributing:
 Feel free to submit issues and pull requests. Contributions to improve the functionality or suggest features are welcome!
