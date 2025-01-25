@@ -3,15 +3,16 @@ import express from "express";
 import env from "dotenv";
 import cors from "cors";
 
+env.config();
+
 const app = express();
-const frontendPort = parseInt(process.env.PORT)
 app.use(cors({
-    origin: `http://localhost:${frontendPort}`
+    origin: `http://localhost:${process.env.PORT}`,
+    methods: ["GET", "POST"], 
+    allowedHeaders: ["Content-Type"],
 }));
 
-const port = 3000
-
-env.config();
+const port = 3000;
 app.use(express.json());
 
 const SYSTEM_PROMPT = `
