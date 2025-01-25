@@ -7,7 +7,7 @@ env.config();
 
 const app = express();
 app.use(cors({
-    origin: "https://recipe-generator-psi-blond.vercel.app/",
+    origin: `http://localhost:${process.env.PORT}`,
     methods: ["GET", "POST"], 
     allowedHeaders: ["Content-Type"],
 }));
