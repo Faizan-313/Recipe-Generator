@@ -1,5 +1,3 @@
-//sending data to the backend and getting the recipe back 
-
 import axios from "axios";
 
 export default async function fetchRecipe(ingredients){

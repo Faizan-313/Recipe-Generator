@@ -6,11 +6,7 @@ import cors from "cors";
 env.config();
 
 const app = express();
-app.use(cors({
-    origin: `http://localhost:${process.env.PORT}`,
-    methods: ["GET", "POST"], 
-    allowedHeaders: ["Content-Type"],
-}));
+app.use(cors());
 
 const port = 3000;
 app.use(express.json());
