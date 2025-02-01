@@ -14,6 +14,9 @@ Chef Claude is a recipe suggestion app that helps users find new recipe ideas ba
 - **Backend**: Express.js, Axios
 - **AI Integration**: Hugging Face Inference API (for recipe generation)
 
+## Demo
+Check out the Web app [here]( https://recipe-generator-idpf.vercel.app/).
+
 ## Setup Instructions:
 
 ### 1. Clone the Repository:
