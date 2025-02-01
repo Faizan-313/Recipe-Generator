@@ -34,7 +34,6 @@ node server.js
 
 Create a .env file in the backend add your Hugging Face API key and port:
 HF_ACCESS_TOKEN=your_huggingface_access_token
-PORT=0000
 ```
 
 # Contributing:
