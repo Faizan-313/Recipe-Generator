@@ -40,6 +40,7 @@ export default function Main(){
                         ingredients = {ingredients} 
                         getRecipe = {getRecipe}
                         ref = {recipeSection}
+                        loading = {loading}
                     />
                 }
                 {loading && <div className="loading-container"><span className="loading-spinner"></span>Loading...</div>}

@@ -14,7 +14,7 @@ export default function IngredientsList(props){
                     <h3 ref={props.ref}>Ready for a recipe?</h3>
                     <p>Generate a recipe from your list of ingredients.</p>
                 </div>
-                <button id="get-recipe-button" onClick={props.getRecipe}>Get a recipe</button>
+                <button id="get-recipe-button" disabled={props.loading} style={props.loading ? { cursor: "not-allowed", pointerEvents: "none" } : {}} onClick={props.getRecipe}>Get a recipe</button>
             </div>}
         </section>
     )
