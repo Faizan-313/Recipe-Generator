@@ -1,4 +1,6 @@
 import React from 'react'
+import githubIcon from '/src/assets/images/github.png'
+import linkedInIcon from '/src/assets/images/linkedin.png'
 
 function Footer() {
     return (
@@ -8,12 +10,12 @@ function Footer() {
                 <ul className="socials">
                     <li>
                         <a href="https://www.linkedin.com/in/faizan-syed-4370152b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                            <img src="src/assets/images/linkedin.png" />
+                            <img src={linkedInIcon} />
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Faizan-313/Recipe-Generator">
-                            <img id="github-image" src="src/assets/images/github.png" />
+                            <img id="github-image" src={githubIcon} />
                         </a>
                     </li>
                 </ul>
