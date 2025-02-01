@@ -30,6 +30,11 @@ npm run dev
 
 cd ../backend
 npm install
+```
+Create server.js file in the backend root directory
+Copy the code from api/index.js file
+Change code and create localhost server to run locally
+```bash
 node server.js
 
 Create a .env file in the backend add your Hugging Face API key and port:
